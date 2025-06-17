@@ -1,0 +1,6 @@
+transformers
+torch
+biopython
+fastapi
+uvicorn
+streamlit
