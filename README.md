@@ -1,22 +1,21 @@
-# 🧬 Biomedical Research Assistant
+# Biomedical Research Assistant
 
 A lightweight Retrieval-Augmented Generation (RAG) system to answer biomedical research questions using PubMed abstracts and a local language model like `microsoft/phi-1_5` or `phi-2`.
 
-Built with ❤️ using `transformers`, `FastAPI`, `Streamlit`, and `BioPython`.
 
 ---
 
-## 🚀 Features
+## Features
 
-- 🔎 Retrieves real PubMed abstracts using `Bio.Entrez`
-- 🧠 Generates natural language answers using local LLMs (e.g. Phi-2)
-- 🛡️ Fallback to direct LLM inference when no useful abstracts are found
-- 📦 Modular Python package structure for reuse or extension
-- 🌐 FastAPI backend + 🎨 Streamlit UI
+- Retrieves real PubMed abstracts using `Bio.Entrez`
+- Generates natural language answers using local LLMs (e.g. Phi-2)
+- Fallback to direct LLM inference when no useful abstracts are found
+- Modular Python package structure for reuse or extension
+- FastAPI backend + Streamlit UI
 
 ---
 
-## 🛠 Installation
+## Installation
 
 ### 1. Clone the repository
 
@@ -33,9 +32,9 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Running the Application
+## Running the Application
 
-### 🌐 Option 1: Run FastAPI + Streamlit manually
+### Option 1: Run FastAPI + Streamlit manually
 
 #### Start FastAPI backend
 
@@ -51,7 +50,7 @@ In a second terminal:
 streamlit run biomed_assist/ui/app.py
 ```
 
-### 🧪 Option 2: Run with a helper script (Linux/macOS)
+### Option 2: Run with a helper script (Linux/macOS)
 
 ```bash
 chmod +x run.sh
@@ -60,7 +59,7 @@ chmod +x run.sh
 
 ---
 
-## 🧪 Usage
+## Usage
 
 Ask biomedical research questions like:
 
@@ -75,7 +74,7 @@ The assistant will:
 
 ---
 
-## 📦 Project Structure
+## Project Structure
 
 ```
 biomed_assist/
@@ -93,7 +92,7 @@ biomed_assist/
 
 ---
 
-## 🖥️ System Requirements
+## System Requirements
 
 * Python 3.8+
 * CPU-friendly (but GPU recommended)
@@ -104,9 +103,9 @@ biomed_assist/
 
 ---
 
-## ⚠️ Troubleshooting
+## Troubleshooting
 
-### 🐌 Inference is stalling?
+### Inference is stalling?
 
 If you’re using a low-end GPU (like NVIDIA MX250), force CPU mode:
 
@@ -114,13 +113,13 @@ If you’re using a low-end GPU (like NVIDIA MX250), force CPU mode:
 device = -1
 ```
 
-### 🧬 PubMed gives irrelevant results?
+### PubMed gives irrelevant results?
 
 We fallback automatically, but you can fine-tune queries in `retrieval.py`.
 
 ---
 
-## 📜 License
+## License
 
 MIT License © 2025 Your Name
 
