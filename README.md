@@ -1,4 +1,4 @@
-# Biomedical Research Assistant
+# AskGenei: A Biomedical Research Assistant
 
 A lightweight Retrieval-Augmented Generation (RAG) system to answer biomedical research questions using PubMed abstracts and a local language model like `microsoft/phi-1_5` or `phi-2`.
 
